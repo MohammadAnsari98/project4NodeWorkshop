@@ -7,11 +7,11 @@ program
 
 
 program
-    .command('addStudent <id> <firstname> <lastname> <phonenumber>  ')
+    .command('addStudent <id> <title> <text>  ')
      .alias('a')
      .description('Add Student to system')
-     .action((id,firstname,lastname,phonenumber)=>{
-        addStudent({id,firstname,lastname,phonenumber})
+     .action((id,title,text)=>{
+        addStudent({id,title,text})
      });
 
 
