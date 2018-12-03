@@ -1,5 +1,4 @@
-ID:5
-ID:8
-12
-goto school
-fuck leila
+
+1
+Goto University
+Talk to Leila
