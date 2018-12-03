@@ -1,5 +1,5 @@
 const program = require('commander');
-const {addTask} = require('./index.js')
+const {addTask,showTask} = require('./index.js')
 const {prompt} = require('inquirer')
 
 
@@ -24,6 +24,12 @@ const questions=[
 ]
 
 
+
+
+
+
+
+
 program.
 	command('add')
 	.alias('a')
@@ -37,13 +43,13 @@ program
     .description("Hello World")
 
 
-// program
-//     .command('addTask <id> <title> <text>  ')
-//      .alias('a')
-//      .description('Add Student to system')
-//      .action((id,title,text)=>{
-//         addTask({id,title,text})
-//      });
+program
+    .command('show')
+     .alias('a')
+     .description('Add Student to system')
+     .action(()=>{
+        showTask()
+     });
 
 
 
